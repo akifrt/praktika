@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Info</title>
+</head>
+<body>
+  
+  <table>
+  <tr>
+  <td>
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+      <div>
+        <label>Full name</label>
+        <input type="text" name="Fullname" id="Fullname">
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type="text" name="Gender"id="Gender">
+      </div>
+      <div>
+        <label>Date of birth</label>
+        <input type="date" name="Fullname" id="Date-of-birth">
+      </div>
+      <div>
+        <label>Position</label>
+        <input type="text" name="Position" id="Position">
+      </div>
+      <div>
+        <label>Sallary</label>
+        <input type="number" name="Sallary" id="Sallary">
+      </div>
+	  <div>
+      
+      <div class="form-action-buttons">
+        <input type="Submit" value="Submit">
+      </div>
+    </form>
+    
+  </td>
+    <td>
+      <table class="list" id="employeeList">
+    <thead>
+      <tr>
+          <th>Fullname</th>
+          <th>Gender</th>
+          <th>Date of birth</th>
+          <th>Position</th>
+          <th>Sallary</th>
+		  <th>Photo</th>
+      </tr>
+    </thead>
+       <tbody>
+
+       </tbody>
+    </table>
+    </td>
+  </tr>
+</table>
+
+  
+<script src="./js/index.js"></script>
+</body>
+</html>

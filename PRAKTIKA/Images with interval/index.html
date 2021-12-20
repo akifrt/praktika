@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <title>File upload</title>
+</head>
+<body>
+
+<div class="container">
+<input type="file" id="file-input" accept="image/jpeg" onchange="preview()" multiple>
+<label for="file-input"><i class="fas fa-upload"></i>  Choose a photo to upload here</label>
+<p id="num-of-files">No files choosen</p>
+<div id="images"></div>
+
+</div>
+
+
+
+  
+<script src="./js/index.js"></script>
+</body>
+</html>

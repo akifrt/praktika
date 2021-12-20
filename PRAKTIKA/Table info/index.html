@@ -13,25 +13,28 @@
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>Full Name*</label>
+                        <label>Name*</label>
 						
-						<label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+						<label class="validation-error hide" id="NameValidationError">This field is required.</label>
 						
-						
-                        <input type="text" name="fullName" id="fullName">
+						<input type="text" name="Name" id="Name">
                     </div>
                     <div>
-                        <label>EMP Code</label>
-                        <input type="text" name="empCode" id="empCode">
+                        <label>Surname</label>
+                        <input type="text" name="Surname" id="Surname">
                     </div>
                     <div>
                         <label>Salary</label>
                         <input type="text" name="salary" id="salary">
                     </div>
-                    <div>
-                        <label>City</label>
-                        <input type="text" name="city" id="city">
+
+                    <div class="input-Photo">
+                     <label>Photo</label>
+                     <input type="file" name="Photo" id="Photo" accept="image/jpeg" >   
                     </div>
+                    
+
+
                     <div  class="form-action-buttons">
                         <input type="submit" value="Submit">
                     </div>
@@ -41,10 +44,10 @@
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
+                            <th>Name</th>
+                            <th>Surname</th>
                             <th>Salary</th>
-                            <th>City</th>
+                            <th>Photo</th>
                             <th></th>
                         </tr>
                     </thead>
